@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="ImageTransfer/src"/>
+	<classpathentry kind="src" path="netty-pipe3/generated"/>
+	<classpathentry kind="src" path="netty-pipe3/src"/>
+	<classpathentry kind="src" path="project/src"/>
+	<classpathentry kind="src" path="RAFT/src"/>
+	<classpathentry kind="src" path="UDP"/>
+	<classpathentry kind="lib" path="ImageTransfer/lib/netty-all-4.0.15.Final.jar"/>
+	<classpathentry kind="lib" path="ImageTransfer/lib/protobuf-java-2.5.0.jar"/>
+	<classpathentry kind="lib" path="netty-pipe3/lib/commons-cli-1.1.jar"/>
+	<classpathentry kind="lib" path="netty-pipe3/lib/commons-io-1.2.jar"/>
+	<classpathentry kind="lib" path="netty-pipe3/lib/hamcrest-core.jar"/>
+	<classpathentry kind="lib" path="netty-pipe3/lib/jackson-all-1.8.5.jar"/>
+	<classpathentry kind="lib" path="netty-pipe3/lib/junit.jar"/>
+	<classpathentry kind="lib" path="netty-pipe3/lib/netty-all-4.0.15.Final.jar"/>
+	<classpathentry kind="lib" path="netty-pipe3/lib/protobuf-java-2.5.0.jar"/>
+	<classpathentry kind="lib" path="netty-pipe3/lib/rabbitmq-client.jar"/>
+	<classpathentry kind="lib" path="netty-pipe3/lib/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="netty-pipe3/lib/slf4j-simple-1.7.2.jar"/>
+	<classpathentry kind="lib" path="RAFT/lib/jackson-all-1.8.5.jar"/>
+	<classpathentry kind="lib" path="RAFT/lib/netty-all-4.0.15.Final.jar"/>
+	<classpathentry kind="lib" path="RAFT/lib/protobuf-java-2.6.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="ImageTransfer/bin"/>
+</classpath>

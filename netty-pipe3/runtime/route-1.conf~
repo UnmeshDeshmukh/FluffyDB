@@ -1,0 +1,15 @@
+{
+    "nodeId": 1,
+    "internalNode": true,
+    "heartbeatDt": 3000,
+    "workPort": 4167,
+    "commandPort": 4168,
+    "routing": [
+        {
+            "id": 2,
+            "host": "169.254.9.211",
+            "port": 4268
+        }
+ 
+    ]
+}

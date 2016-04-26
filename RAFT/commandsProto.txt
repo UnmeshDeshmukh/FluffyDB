@@ -1,0 +1,7 @@
+protoc --proto_path=/home/vinit/workspace/RAFT/proto/ --java_out=/home/vinit/workspace/RAFT/src/raft/proto /home/vinit/workspace/RAFT/proto/AppendEntriesRPC.proto 
+
+protoc --proto_path=/home/vinit/workspace/RAFT/proto/ --java_out=/home/vinit/workspace/RAFT/src/raft/proto /home/vinit/workspace/RAFT/proto/HeartBeatRPC.proto 
+
+protoc --proto_path=/home/vinit/workspace/RAFT/proto/ --java_out=/home/vinit/workspace/RAFT/src/raft/proto /home/vinit/workspace/RAFT/proto/VoteRPC.proto 
+
+protoc --proto_path=/home/vinit/workspace/RAFT/proto/ --java_out=/home/vinit/workspace/RAFT/src/raft/proto /home/vinit/workspace/RAFT/proto/Work.proto 

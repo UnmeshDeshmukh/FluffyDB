@@ -1,0 +1,4 @@
+message ImageMsg{
+	required int32 version = 1;
+	required bytes imageData = 2;
+}

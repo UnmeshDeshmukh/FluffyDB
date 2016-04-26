@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<project name="NIO-based (JBoss Netty) communication pipeline" basedir="." default="build">
+
+<target name="init">
+		<property name="src.dir" location="${basedir}/src" />
+		<property name="test.dir" location="${basedir}/src/test" />
+		<property name="build.dir" location="${basedir}/bin" />
+		<property name="generated.dir" location="${basedir}/generated" />
+		
+		<property name="config.dir" location="${basedir}/resources" />
+		<property name="protobuf.dir" location="${basedir}/proto" />
+		<!--<property name="junit.jar" location="/Users/gash/Developer/junit-4.8.2.jar" />-->
+		<!--<property name="logging.jar" location="${basedir}/lib/slf4j-log4j12-1.6.1.jar" />-->
+
+		<path id="project.classpath">
+			<pathelement location="${build.dir}" />
+			<fileset dir="${basedir}/lib">
+				<include name="*.jar" />
+			</fileset>
+			<!--
+			<fileset dir="${protobuf.dir}">
+				<include name="*.jar" />
+			</fileset>
+			-->
+		</path>
+</target>
+
+
+<target name="clean" depends="init">
+		<delete dir="${build.dir}" />
+	</target>
+
+
+
+	<target name="generated" depends="clean">
+			<javac destdir="${build.dir}" debug="true" deprecation="false" optimize="false" failonerror="true">
+				<src path="${generated.dir}" />
+				<classpath refid="project.classpath" />
+			</javac>
+	</target>
+	
+	<target name="build" depends="clean">
+		<mkdir dir="${build.dir}" />
+		
+		<javac destdir="${build.dir}" debug="true" deprecation="false" optimize="false" failonerror="true">
+			<src path="${src.dir}" />
+			<classpath refid="project.classpath" />
+		</javac>
+	</target>
+
+	<target name="build.test" depends="build">
+		<javac destdir="${build.dir}" debug="true" deprecation="false" optimize="false" failonerror="true">
+			<src path="${test.dir}" />
+			<classpath refid="project.classpath" />
+		</javac>
+	</target>
+
+	</project>

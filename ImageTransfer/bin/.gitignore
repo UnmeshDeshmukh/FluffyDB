@@ -1,0 +1,16 @@
+/QuoteClient.class
+/QuoteClientHandler.class
+/QuoteServer.class
+/QuoteServerHandler.class
+/adapter/
+/client/
+/common/
+/deven/
+/edu/
+/gash/
+/logger/
+/node/
+/raft/
+/router/
+/server/
+/test/

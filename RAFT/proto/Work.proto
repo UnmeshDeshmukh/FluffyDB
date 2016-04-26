@@ -1,0 +1,27 @@
+option java_package = "raft.proto";
+import "AppendEntriesRPC.proto";
+import "HeartBeatRPC.proto";
+import "VoteRPC.proto";
+import "Ping.proto";	
+
+
+//									//WorkMessage//
+//-------------------------------------------------------------------------------------
+
+/* 						Either of mentioned the Packets are constructed 
+						and sent through Workmessage
+*/				
+
+//-------------------------------------------------------------------------------------
+message WorkMessage{
+
+	required int64 unixTimeStamp = 1;
+	oneof payload{ 
+	 AppendEntriesPacket appendEntriesPacket = 2;
+	 HeartBeatPacket heartBeatPacket = 3;
+	 VoteRPCPacket	voteRPCPacket =4;
+	 PingMessage trivialPing =5;
+	 
+	}
+
+}
